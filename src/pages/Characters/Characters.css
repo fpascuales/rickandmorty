@@ -1,0 +1,48 @@
+.characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.character img {
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.boton-filtrado {
+    padding: 20px;
+    background-color: rgb(219, 97, 97);
+    border-radius: 5px;
+    border: 3px solid black;
+    margin: 20px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.basura {
+    position: absolute;
+    width: 50px;
+    top: 50px;
+    right: 10px;
+    border: none !important;
+    border-radius: 0 !important;
+    cursor: pointer;
+    z-index: 9999;
+}

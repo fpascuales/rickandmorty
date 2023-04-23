@@ -1,0 +1,35 @@
+.planets{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://www.wallpaperflare.com/static/81/544/844/rick-and-morty-space-assorted-planets-wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.planet{
+    margin: 10px;
+    width: 300px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #02B0CC;
+    border: solid 2px #0F4650;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+.planet:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(30, 255, 0, 0.685);
+}
+.planet-btn{
+    border: none;
+    background-color: #1eff00af;
+    border-radius: 0 0 20px 20px;
+    padding: 10px 0;
+    cursor: pointer;
+}

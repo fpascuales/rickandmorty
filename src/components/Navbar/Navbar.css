@@ -1,0 +1,17 @@
+.navbar {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid #02B0CC;
+    background-color: #0F4650;
+}
+.navbar-link{
+    color: #fff;
+}
+
+.perfil {
+    width: 100px;
+    border-radius: 100%;
+    border: solid 3px black;
+}

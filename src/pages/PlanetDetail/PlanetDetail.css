@@ -1,0 +1,90 @@
+.planet-info{
+    min-height: 100vh;
+    background-image: url('https://w.forfun.com/fetch/15/150543558074cafd15fed9c55c3e1dad.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.planet-data{
+    color: #fff;
+    margin: 60px 0;
+}
+.planet-residents{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.resident{
+    margin: 10px;
+    background-color: #02B0CC;
+    border: solid 2px #0F4650;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+.resident:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #1eff00af;
+}
+.resident-image{
+    border-radius: 20px 20px 0 0;
+    filter: grayscale(100%);
+    transition: filter 0.2s ease-in-out;
+}
+.resident-image:hover {
+    filter: grayscale(0%);
+  }
+.resident-name{
+    font-size: 18px;
+    margin: 5px 0;
+    color: #fff;
+}
+.modal {
+    /* display: none; */
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #02B0CC;
+    border: solid 2px #0F4650;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    flex-direction: column;
+    z-index: 2;
+  }
+  .modal-close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 40px;
+    border: none;
+    background: none;
+    color: #fff;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .modal-close:hover{
+    transform: scale(1.05);
+  }
+  .modal-resident-image{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    border-radius: 100%;
+  }
+  .abierto {
+    display: flex !important;
+  }
